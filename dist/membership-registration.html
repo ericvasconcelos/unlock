@@ -1,0 +1,940 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Membership Registration</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/membership-registration.60ca4a01.css">
+<script src="/membership-registration.60ca4a01.js"></script></head>
+
+<body>
+  <header class="container header">
+    <div class="col-xs-2 col-sm-4 col-md-6">
+      <a href="/" class="logo">
+        <img src="/unlock-logo.d74fa2f1.svg" width="180" height="44.7" alt="Unlock logo">
+      </a>
+    </div>
+    <div class="col-xs-2 col-sm-4 col-md-6">
+      <div class="header-right">
+        <button class="btn btn-clean">Sign Up</button>
+        <button class="btn btn-fill">Login</button>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="col-xs-4 col-sm-8 col-md-12">
+      <form id="form" name="form" class="box">
+        <h1 class="box-title">Membership Registration</h1>
+        <div class="steps">
+          <div class="step-line">
+            <div class="step-line-filled"></div>
+          </div>
+          <div class="step active">
+            <span class="step-number">
+              <span>
+                1
+                <img src="/check.7a36b9ca.svg" width="16px" height="16px" alt="Checked">
+              </span>
+            </span>
+            <span class="step-name">Acknowledgemnt</span>
+          </div>
+          <div class="step">
+            <span class="step-number">
+              <span>
+                2
+                <img src="/check.7a36b9ca.svg" width="16px" height="16px" alt="Checked">
+              </span>
+            </span>
+            <span class="step-name">About You</span>
+          </div>
+          <div class="step">
+            <span class="step-number">
+              <span>
+                3
+                <img src="/check.7a36b9ca.svg" width="16px" height="16px" alt="Checked">
+              </span>
+            </span>
+            <span class="step-name">Education & Income</span>
+          </div>
+          <div class="step">
+            <span class="step-number">
+              <span>
+                4
+                <img src="/check.7a36b9ca.svg" width="16px" height="16px" alt="Checked">
+              </span>
+            </span>
+            <span class="step-name">Ethnicity</span>
+          </div>
+          <div class="step">
+            <span class="step-number">
+              <span>
+                5
+                <img src="/check.7a36b9ca.svg" width="16px" height="16px" alt="Checked">
+              </span>
+            </span>
+            <span class="step-name">Contact Information</span>
+          </div>
+        </div>
+
+        <div id="step-1" class="tabcontent active">
+          <h2 class="tabcontent-first-title">Welcome to Unlock!</h2>
+          <p class="tabcontent-paragraph">Once you complete your Member Registration, Unlock will send you email invitations to participate in surveys and other research activities, as well as our newsletter sharing survey results and community updates.</p>
+          <p class="tabcontent-paragraph">Your privacy is our priority. Any personal information collected during onboarding is solely to improve your experience on Unlock. Your data will never be used or shared elsewhere. Your trust is crucial to us.</p>
+          <p class="tabcontent-paragraph">Click here for our <a href="https://www.springboardamerica.com/static/privacy">Privacy Policy</a> and <a href="https://www.springboardamerica.com/static/terms">Terms and Conditions</a>. To learn more about Unlock</p>
+          <p class="tabcontent-paragraph">Please click "Next" to continue.</p>
+        </div>
+
+        <div id="step-2" class="tabcontent">
+          <div class="introduction-tab">
+            <h2 class="tabcontent-title">About You</h2>
+            <p class="tabcontent-subtitle">To start, we'll collect some basic details about you. We ask these questions up-front now so we have your details on record and don’t have to ask them with every survey. Try to answer all questions thoughtfully and carefully follow our instructions as your responses may be used to determine whether you've been approved to receive surveys.</p>
+          </div>
+
+          <div class="form-row">
+            <label for="gender" class="label">
+              Gender
+              <select name="gender" id="gender" class="select" onchange="validateRequired(this)">
+                <option disabled="" selected="" value=""> -- select an option -- </option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+              </select>
+            </label>
+
+            <div>
+              <label for="date_of_birth" class="label">
+                Date of Birth
+              </label>
+              <div class="birth-date">
+                <select name="month" id="month" class="select" onchange="validateRequired(this)">
+                  <option disabled="" selected="" value="">mm</option>
+                  <option value="01">01</option>
+                  <option value="02">02</option>
+                  <option value="03">03</option>
+                  <option value="04">04</option>
+                  <option value="05">05</option>
+                  <option value="06">06</option>
+                  <option value="07">07</option>
+                  <option value="08">08</option>
+                  <option value="09">09</option>
+                  <option value="10">10</option>
+                  <option value="11">11</option>
+                  <option value="12">12</option>
+                </select>
+                <select name="year" id="year" class="select" onchange="validateRequired(this)">
+                  <option disabled="" selected="" value="">YYYY</option>
+                  <option value="1910">1910</option>
+                  <option value="1911">1911</option>
+                  <option value="1912">1912</option>
+                  <option value="1913">1913</option>
+                  <option value="1914">1914</option>
+                  <option value="1915">1915</option>
+                  <option value="1916">1916</option>
+                  <option value="1917">1917</option>
+                  <option value="1918">1918</option>
+                  <option value="1919">1919</option>
+                  <option value="1920">1920</option>
+                  <option value="1921">1921</option>
+                  <option value="1922">1922</option>
+                  <option value="1923">1923</option>
+                  <option value="1924">1924</option>
+                  <option value="1925">1925</option>
+                  <option value="1926">1926</option>
+                  <option value="1927">1927</option>
+                  <option value="1928">1928</option>
+                  <option value="1929">1929</option>
+                  <option value="1930">1930</option>
+                  <option value="1931">1931</option>
+                  <option value="1932">1932</option>
+                  <option value="1933">1933</option>
+                  <option value="1934">1934</option>
+                  <option value="1935">1935</option>
+                  <option value="1936">1936</option>
+                  <option value="1937">1937</option>
+                  <option value="1938">1938</option>
+                  <option value="1939">1939</option>
+                  <option value="1940">1940</option>
+                  <option value="1941">1941</option>
+                  <option value="1942">1942</option>
+                  <option value="1943">1943</option>
+                  <option value="1944">1944</option>
+                  <option value="1945">1945</option>
+                  <option value="1946">1946</option>
+                  <option value="1947">1947</option>
+                  <option value="1948">1948</option>
+                  <option value="1949">1949</option>
+                  <option value="1950">1950</option>
+                  <option value="1951">1951</option>
+                  <option value="1952">1952</option>
+                  <option value="1953">1953</option>
+                  <option value="1954">1954</option>
+                  <option value="1955">1955</option>
+                  <option value="1956">1956</option>
+                  <option value="1957">1957</option>
+                  <option value="1958">1958</option>
+                  <option value="1959">1959</option>
+                  <option value="1960">1960</option>
+                  <option value="1961">1961</option>
+                  <option value="1962">1962</option>
+                  <option value="1963">1963</option>
+                  <option value="1964">1964</option>
+                  <option value="1965">1965</option>
+                  <option value="1966">1966</option>
+                  <option value="1967">1967</option>
+                  <option value="1968">1968</option>
+                  <option value="1969">1969</option>
+                  <option value="1970">1970</option>
+                  <option value="1971">1971</option>
+                  <option value="1972">1972</option>
+                  <option value="1973">1973</option>
+                  <option value="1974">1974</option>
+                  <option value="1975">1975</option>
+                  <option value="1976">1976</option>
+                  <option value="1977">1977</option>
+                  <option value="1978">1978</option>
+                  <option value="1979">1979</option>
+                  <option value="1980">1980</option>
+                  <option value="1981">1981</option>
+                  <option value="1982">1982</option>
+                  <option value="1983">1983</option>
+                  <option value="1984">1984</option>
+                  <option value="1985">1985</option>
+                  <option value="1986">1986</option>
+                  <option value="1987">1987</option>
+                  <option value="1988">1988</option>
+                  <option value="1989">1989</option>
+                  <option value="1990">1990</option>
+                  <option value="1991">1991</option>
+                  <option value="1992">1992</option>
+                  <option value="1993">1993</option>
+                  <option value="1994">1994</option>
+                  <option value="1995">1995</option>
+                  <option value="1996">1996</option>
+                  <option value="1997">1997</option>
+                  <option value="1998">1998</option>
+                  <option value="1999">1999</option>
+                  <option value="2000">2000</option>
+                  <option value="2001">2001</option>
+                  <option value="2002">2002</option>
+                  <option value="2003">2003</option>
+                  <option value="2004">2004</option>
+                  <option value="2005">2005</option>
+                  <option value="2006">2006</option>
+                  <option value="2007">2007</option>
+                  <option value="2008">2008</option>
+                  <option value="2009">2009</option>
+                  <option value="2010">2010</option>
+                  <option value="2011">2011</option>
+                  <option value="2012">2012</option>
+                  <option value="2013">2013</option>
+                  <option value="2014">2014</option>
+                  <option value="2015">2015</option>
+                  <option value="2016">2016</option>
+                  <option value="2017">2017</option>
+                  <option value="2018">2018</option>
+                  <option value="2019">2019</option>
+                  <option value="2020">2020</option>
+                  <option value="2021">2021</option>
+                  <option value="2022">2022</option>
+                  <option value="2023">2023</option>
+                </select>
+              </div>
+              
+              <p class="date_of_birth-error"></p>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div>
+              <label for="location" class="label">
+                Location
+                <span class="label-description">In which State do you live in?</span>
+                <select name="location" id="location" class="select">
+                  <option selected="" value=""> -- select an option -- </option>
+                  <option value="Alabama">Alabama</option>
+                  <option value="Alaska">Alaska</option>
+                  <option value="Arizona">Arizona</option>
+                  <option value="Arkansas">Arkansas</option>
+                  <option value="California">California</option>
+                  <option value="Colorado">Colorado</option>
+                  <option value="Connecticut">Connecticut</option>
+                  <option value="Delaware">Delaware</option>
+                  <option value="District of Columbia">District of Columbia</option>
+                  <option value="Florida">Florida</option>
+                  <option value="Georgia">Georgia</option>
+                  <option value="Hawaii">Hawaii</option>
+                  <option value="Idaho">Idaho</option>
+                  <option value="Illinois">Illinois</option>
+                  <option value="Indiana">Indiana</option>
+                  <option value="Iowa">Iowa</option>
+                  <option value="Kansas">Kansas</option>
+                  <option value="Kentucky">Kentucky</option>
+                  <option value="Louisiana">Louisiana</option>
+                  <option value="Maine">Maine</option>
+                  <option value="Maryland">Maryland</option>
+                  <option value="Massachusetts">Massachusetts</option>
+                  <option value="Michigan">Michigan</option>
+                  <option value="Minnesota">Minnesota</option>
+                  <option value="Mississippi">Mississippi</option>
+                  <option value="Missouri">Missouri</option>
+                  <option value="Montana">Montana</option>
+                  <option value="Nebraska">Nebraska</option>
+                  <option value="Nevada">Nevada</option>
+                  <option value="New Hampshire">New Hampshire</option>
+                  <option value="New Jersey">New Jersey</option>
+                  <option value="New Mexico">New Mexico</option>
+                  <option value="New York">New York</option>
+                  <option value="North Carolina">North Carolina</option>
+                  <option value="North Dakota">North Dakota</option>
+                  <option value="Ohio">Ohio</option>
+                  <option value="Oklahoma">Oklahoma</option>
+                  <option value="Oregon">Oregon</option>
+                  <option value="Pennsylvania">Pennsylvania</option>
+                  <option value="Rhode Island">Rhode Island</option>
+                  <option value="South Carolina">South Carolina</option>
+                  <option value="South Dakota">South Dakota</option>
+                  <option value="Tennessee">Tennessee</option>
+                  <option value="Texas">Texas</option>
+                  <option value="Utah">Utah</option>
+                  <option value="Vermont">Vermont</option>
+                  <option value="Virginia">Virginia</option>
+                  <option value="Washington">Washington</option>
+                  <option value="West Virginia">West Virginia</option>
+                  <option value="Wisconsin">Wisconsin</option>
+                  <option value="Wyoming">Wyoming</option>
+                </select>
+              </label>
+
+              <label for="elsewhere" class="label-checkbox">
+                Elsewhere in the world 
+                <input type="checkbox" name="elsewhere" id="elsewhere" value="yes">
+                <span></span>
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <div id="step-3" class="tabcontent">
+          <div class="introduction-tab">
+            <h2 class="tabcontent-title">
+              Education & Income
+            </h2>
+          </div>
+          
+          <div class="form-row">
+            <label for="education" class="label">
+              Education
+              <span class="label-description">Please select the highest level of education you've completed.</span>
+              <select name="education" id="education" class="select" onchange="validateRequired(this)">
+                <option disabled="" selected="" value=""> -- select an option -- </option>
+                <option value="Primary School">Primary School</option>
+                <option value="High School">High School</option>
+                <option value="University/College">University/College</option>
+                <option value="Postgraduate Education">Postgraduate Education</option>
+                <option value="None completed">None completed</option>
+              </select>
+            </label>
+
+            <label for="householde_income" class="label">
+              Household Income
+              <span class="label-description">What is your current household income?</span>
+              <select name="householde_income" id="householde_income" class="select" onchange="validateRequired(this)">
+                <option disabled="" selected="" value=""> -- select an option -- </option>
+                <option value="$0 - $14,999">$0 - $14,999</option>
+                <option value="$15,000 - $24,999">$15,000 - $24,999</option>
+                <option value="$25,000 - $49,999">$25,000 - $49,999</option>
+                <option value="$50,000 - $79,999">$50,000 - $79,999</option>
+                <option value="$80,000 - $99,999">$80,000 - $99,999</option>
+                <option value="$100,000 - $149,999">$100,000 - $149,999</option>
+                <option value="$150,000 - $199,999">$150,000 - $199,999</option>
+                <option value="$200,000 or more">$200,000 or more</option>
+                <option value="Prefer not to say">Prefer not to say</option>
+              </select>
+            </label>
+          </div>
+
+          <div class="less-then-18">
+            <div class="introduction-tab">
+              <h2 class="successfully-title">
+                Thanks for your interest! 
+              </h2>
+            </div>
+            <p class="paragraph">Most of our surveys are aimed at people over 18. However, from time to time, we may have some questions for you, so we’d still be happy for you to join Maru Springboard America. We just wanted to be upfront that you may not get surveys very often until you turn 18. <br></p>
+            <div class="wrap-radio">
+              <p class="question">Do you want to...?</p>
+              <label for="Yes" class="label-radio">
+                <input type="radio" id="Yes" name="receive_questions" value="Yes">
+                <span></span>
+                Carry on and join Maru Springboard America
+              </label>
+              <label for="No" class="label-radio">
+                <input type="radio" id="No" name="receive_questions" value="No">
+                <span></span>
+                I'm done, thanks
+              </label>
+            </div>
+          </div>
+
+        </div>
+
+        <div id="step-4" class="tabcontent">
+          <div class="introduction-tab">
+            <h2 class="tabcontent-title">
+              Ethnicity
+            </h2>
+          </div>
+
+          <div class="wrap-radio">
+            <p class="question">Do you consider yourself to be Hispanic/Latino or of Hispanic/Latino origin?</p>
+            <label for="latin-yes" class="label-radio">
+              <input type="radio" id="latin-yes" name="HispanicLatino" value="yes">
+              <span></span>
+              Yes
+            </label>
+            <label for="latin-no" class="label-radio">
+              <input type="radio" id="latin-no" name="HispanicLatino" value="no">
+              <span></span>
+              No
+            </label>
+          </div>
+
+          <div class="wrap-checkbox">
+            <p class="question">Which of following best describe your race? <span>(You can select more than one answer if appropriate.)</span></p>
+            <label for="White" class="label-checkbox">
+              <input type="checkbox" id="White" name="race" value="White">
+              <span></span>
+              White
+            </label>
+            <label for="Black or African American" class="label-checkbox">
+              <input type="checkbox" id="Black or African American" name="race" value="Black or African American">
+              <span></span>
+              Black or African American
+            </label>
+            <label for="American Indian or Alaska Native" class="label-checkbox">
+              <input type="checkbox" id="American Indian or Alaska Native" name="race" value="American Indian or Alaska Native">
+              <span></span>
+              American Indian or Alaska Native
+            </label>
+            <label for="Asian" class="label-checkbox">
+              <input type="checkbox" id="Asian" name="race" value="Asian">
+              <span></span>
+              Asian
+            </label>
+            <label for="Native Hawaiian or other Pacific Islander" class="label-checkbox">
+              <input type="checkbox" id="Native Hawaiian or other Pacific Islander" name="race" value="Native Hawaiian or other Pacific Islander">
+              <span></span>
+              Native Hawaiian or other Pacific Islander
+            </label>
+            <label for="Other race" class="label-checkbox">
+              <input type="checkbox" id="Other race" name="race" value="Other race">
+              <span></span>
+              Other race
+            </label>
+          </div>
+        </div>
+
+        <div id="step-5" class="tabcontent">
+          <div class="introduction-tab">
+            <h2 class="tabcontent-title">
+              Contact Information 
+            </h2>
+
+            <p class="tabcontent-subtitle">
+              Two quick steps remain to become a Maru Springboard America member and enter the draw for a total prize value of $1,000. <br>
+              Step 1: Complete the final basic contact information required. We take data protection very seriously—your personal information will remain confidential and secure. <br>
+              Step 2: Click on the link in the email we send you to confirm your membership.
+            </p>
+          </div>
+
+          <div class="form-row">
+            <label for="first_name" class="label">
+              First Name
+              <input type="text" name="first_name" id="first_name" class="input" onchange="validateRequired(this)">
+            </label>
+
+            <label for="last_name" class="label">
+              Last Name
+              <input type="text" name="last_name" id="last_name" class="input" onchange="validateRequired(this)">
+            </label>
+          </div>
+          <div class="form-row">
+            <label for="zipcode" class="label">
+              Zip Code
+              <input type="text" name="zipcode" id="zipcode" class="input" onchange="validateMainZipCode(this)">
+            </label>
+
+            <label for="confirmZipcode" class="label">
+              Confirm Zip Code
+              <span class="label-description">We collect this so we can send you surveys relevant to your local area.</span>
+              <input type="text" name="confirmZipcode" id="confirmZipcode" class="input" onchange="validateConfirmZipCode(this)">
+            </label>
+          </div>
+
+          <div class="form-row">
+            <label for="email" class="label">
+              Email address
+              <input type="email" name="email" id="email" class="input" onchange="validateMainEmail(this)">
+            </label>
+
+            <label for="confirm_email" class="label">
+              Confirm Email
+              <input type="email" name="confirm_email" id="confirm_email" class="input" onchange="validateConfirmEmail(this)">
+            </label>
+          </div>
+
+          <div class="wrap-radio">
+            <p class="question">By clicking the "I Accept" button on this page, you accept the <a href="">Privacy Policy</a> and <a href="">Terms and Conditions</a> for Maru Springboard America. Please take a moment to review our Privacy Policy and Terms and Conditions.</p>
+            <label for="accept-yes" class="label-radio">
+              <input type="radio" id="accept-yes" name="acceptance" value="yes">
+              <span></span>
+              I Accept
+            </label>
+            <label for="accept-no" class="label-radio">
+              <input type="radio" id="accept-no" name="acceptance" value="no">
+              <span></span>
+              I do not Accept
+            </label>
+          </div>
+
+          <p class="question">Are you a robot?</p>
+          <p>RECAPTCHA</p>
+          <br>
+          <br>
+
+          <div class="wrap-radio language-preference">
+            <p class="question">And finally, which language would you prefer to receive your surveys and any member communications?</p>
+            <label for="English" class="label-radio">
+              <input type="radio" id="English" name="Language_Preference" value="English" checked="" onchange="validatePreferenceLang(this)">
+              <span></span>
+              English
+            </label>
+            <label for="Spanish" class="label-radio">
+              <input type="radio" id="Spanish" name="Language_Preference" value="Spanish" onchange="validatePreferenceLang(this)">
+              <span></span>
+              Spanish
+            </label>
+          </div>
+
+          <div class="wrap-checkbox">
+            <p class="question">Would you be willing to take surveys in other languages as well?</p>
+            <label for="survey_chinese" class="label-checkbox">
+              <input type="checkbox" id="survey_chinese" name="SurveyLanguages_Otherthan" value="Chinese" onchange="validateSurveyLang(this)">
+              <span></span>
+              Yes, in Chinese
+            </label>
+            <label for="survey_french" class="label-checkbox">
+              <input type="checkbox" id="survey_french" name="SurveyLanguages_Otherthan" value="French" onchange="validateSurveyLang(this)">
+              <span></span>
+              Yes, in French
+            </label>
+            <label for="survey_spanish" class="label-checkbox survey-language-spanish-option">
+              <input type="checkbox" id="survey_spanish" name="SurveyLanguages_Otherthan" value="Spanish" onchange="validateSurveyLang(this)">
+              <span></span>
+              Yes, in Spanish
+            </label>
+            <label for="survey_another_language" class="label-checkbox">
+              <input type="checkbox" id="survey_another_language" name="SurveyLanguages_Otherthan" value="Another language" onchange="validateSurveyLang(this)">
+              <span></span>
+              Yes, in another language (please specify)
+            </label>
+            <label for="other_language">
+              <input type="text" name="other_language" id="other_language" class="input" disabled="">
+            </label>
+
+            <label for="survey_no" class="label-checkbox">
+              <input type="checkbox" id="survey_no" name="SurveyLanguages_Otherthan" value="No" onchange="validateSurveyLang(this)">
+              <span></span>
+              No, I am not willing to take surveys in other languages
+            </label>
+          </div>
+        </div>
+
+        <div id="step-6" class="tabcontent">
+          <div class="centralized-content">
+            <img src="/successfully-check.5bb96fc9.svg" alt="Successfully registered">
+            <h2 class="successfully-title">
+              Thank you! One more step to join Maru Springboard America...
+            </h2>
+            <p class="successfully-paragraph">We will be sending you an email containing a link which you will need to click to confirm your membership and gain your entry to win $1,000 (total prize amount).</p>
+            
+            <div class="successfully-list">
+              <h3 class="successfully-list-title">To make sure you receive this email, please:</h3>
+              <p class="successfully-list-item">1. Check your spam filter.</p>
+              <p class="successfully-list-item">2.Add <a href="mailto:support@springboardamerica.com">support@springboardamerica.com</a> to your address book, or 'Safe' list.</p>
+              <p class="successfully-list-item">3.Read the instructions here for your specific email provider.</p>
+            </div>
+
+            <p class="successfully-paragraph">We look forward to confirming your membership!</p>
+            
+            <hr class="divider">
+
+            <p class="successfully-paragraph">Maru Springboard America also has a Facebook and Twitter Page, on which we post the latest results from our surveys and questions about topical issues. Fans or followers can give us their feedback as well as discuss their opinions with one another. If you’re interested in joining, here are the details on how to join us on Facebook or follow us on Twitter.</p>
+            <a class="social-media" href="https://www.facebook.com/MaruSpringboardAmerica/" target="_blank">
+              <svg viewBox="0 0 36 36" fill="currentColor" height="28" width="28">
+                <path color="#0866FF" d="M20.181 35.87C29.094 34.791 36 27.202 36 18c0-9.941-8.059-18-18-18S0 8.059 0 18c0 8.442 5.811 15.526 13.652 17.471L14 34h5.5l.681 1.87Z"></path>
+                <path color="#FFF" d="M13.651 35.471v-11.97H9.936V18h3.715v-2.37c0-6.127 2.772-8.964 8.784-8.964 1.138 0 3.103.223 3.91.446v4.983c-.425-.043-1.167-.065-2.081-.065-2.952 0-4.09 1.116-4.09 4.025V18h5.883l-1.008 5.5h-4.867v12.37a18.183 18.183 0 0 1-6.53-.399Z"></path>
+              </svg>
+              Log into your account and then 'Like' the page in order to become a Fan.
+            </a>
+            <a class="social-media" href="https://twitter.com/maruspringboard" target="_blank">
+              <svg viewBox="0 0 24 24" height="28" width="28">
+                <g>
+                  <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path>
+                </g>
+              </svg>
+              Log into your account and then click the 'Follow' button on our Page.
+            </a>
+
+            <hr class="divider">
+
+            <h4 class="successfully-subtitle">Thanks! We look forward to confirming your membership.</h4>
+            <p class="successfully-paragraph">You can now close this window.</p>
+            <p class="successfully-paragraph"> Any questions? Email us at <a href="mailto:support@springboardamerica.com">support@springboardamerica.com</a> and we'll get back to you.</p>
+          </div>
+        </div>
+
+        <nav class="nav-buttons">
+          <button class="prev-button previous" type="button" onclick="prevTab()">Cancel</button>
+          <button class="next-button" type="button" onclick="nextTab()">Next</button>
+        </nav>
+      </form>
+    </div>
+  </div>
+  
+
+</body>
+  <script>var currentTabIndex = 0;
+var tabs = document.querySelectorAll('.tabcontent');
+var steps = document.querySelectorAll('.step');
+var stepLine = document.querySelector('.steps');
+var boxTitle = document.querySelector('.box-title');
+var navigation = document.querySelector('.nav-buttons');
+var nextButton = document.querySelector('.next-button');
+var prevButton = document.querySelector('.prev-button');
+var lineFilled = document.querySelector('.step-line-filled');
+var lessThen18 = document.querySelector('.less-then-18');
+var langPreferenceBlock = document.querySelector('.language-preference');
+var surveySpanishOption = document.querySelector('.survey-language-spanish-option');
+var chineseLang = document.querySelector('#survey_chinese');
+var frenchLang = document.querySelector('#survey_french');
+var spanishLang = document.querySelector('#survey_spanish');
+var anotherLang = document.querySelector('#survey_another_language');
+var otherLangInput = document.querySelector('#other_language');
+function validateBirthDate(field) {
+  var value = field.value;
+  var regexData = /^(0[1-9]|1[0-2])\/(0[1-9]|[12][0-9]|3[01])\/\d{4}$/;
+  if (regexData.test(value)) {
+    var partesData = value.split('/');
+    var month = parseInt(partesData[0], 10);
+    var day = parseInt(partesData[1], 10);
+    var year = parseInt(partesData[2], 10);
+    if (month >= 1 && month <= 12 && day >= 1 && day <= 31 && year >= 1900 && year <= new Date().getFullYear()) {
+      field.classList.remove('error');
+      return true;
+    } else {
+      field.classList.add('error');
+      return false;
+    }
+  } else {
+    field.classList.add('error');
+    return false;
+  }
+}
+function validatePatternZipcode(field) {
+  // Padrão para um código postal de cinco dígitos ou código postal de nove dígitos (ZIP+4)
+  var patternZipcode = /^\d{5}(-\d{4})?$/;
+  if (patternZipcode.test(field.value)) {
+    field.classList.remove('error');
+    return true;
+  }
+  field.classList.add('error');
+  return false;
+}
+function validateMainZipCode(field) {
+  var confirmZipcode = form.confirmZipcode;
+  validatePatternZipcode(field);
+  if (confirmZipcode.value === '') {
+    return false;
+  }
+  if (confirmZipcode.value === field.value) {
+    confirmZipcode.classList.remove('error');
+    return true;
+  }
+  confirmZipcode.classList.add('error');
+  return false;
+}
+function validateConfirmZipCode(field) {
+  var zipcode = form.zipcode.value;
+  validatePatternZipcode(field);
+  if (zipcode === field.value) {
+    field.classList.remove('error');
+    return true;
+  }
+  field.classList.add('error');
+  return false;
+}
+function validateEmail(field) {
+  var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (emailRegex.test(field.value)) {
+    field.classList.remove('error');
+    return true;
+  }
+  field.classList.add('error');
+  return false;
+}
+function validateMainEmail(field) {
+  var confirm_email = form.confirm_email;
+  validateEmail(field);
+  if (confirm_email.value === '') {
+    return false;
+  }
+  if (confirm_email.value === field.value) {
+    confirm_email.classList.remove('error');
+    return true;
+  }
+  confirm_email.classList.add('error');
+  return false;
+}
+function validateConfirmEmail(field) {
+  var email = form.email.value;
+  validateEmail(field);
+  if (email === field.value) {
+    field.classList.remove('error');
+    return true;
+  }
+  field.classList.add('error');
+  return false;
+}
+function validateRequired(field) {
+  if (!field.value || field.value.length < 2) {
+    field.classList.add('error');
+    return false;
+  }
+  field.classList.remove('error');
+  return true;
+}
+function validateLocation(field, elsewhere) {
+  if (field.value && !elsewhere.checked) {
+    field.classList.remove('error');
+    return true;
+  }
+  if (!field.value && elsewhere.checked) {
+    field.classList.remove('error');
+    return true;
+  }
+  field.classList.add('error');
+  return false;
+}
+function validateAgeLocation() {
+  var location = form.location.value;
+  var month = Number(form.month.value);
+  var year = Number(form.year.value);
+  var currDate = new Date();
+  var currYear = currDate.getFullYear();
+  var currMonth = currDate.getMonth() + 1;
+  var idade = currYear - year;
+  if (currMonth < month) idade--;
+  if (idade < 18) {
+    lessThen18.style.display = 'block';
+    return false;
+  }
+  return true;
+}
+function validatePreferenceLang(field) {
+  if (field.value === 'Spanish' && field.checked) {
+    surveySpanishOption.style.display = 'none';
+  } else {
+    surveySpanishOption.style.display = 'flex';
+  }
+}
+function validateSurveyLang(field) {
+  if (field.value === 'Another language' && field.checked) {
+    otherLangInput.disabled = false;
+  }
+  if (field.value === 'Another language' && !field.checked) {
+    otherLangInput.disabled = true;
+  }
+  var fields = [chineseLang, frenchLang, spanishLang, anotherLang];
+  if (field.value === 'No' && field.checked) {
+    fields.forEach(function (f) {
+      f.checked = false;
+      f.disabled = true;
+      otherLangInput.value = '';
+    });
+  }
+  if (field.value === 'No' && !field.checked) {
+    fields.forEach(function (f) {
+      return f.disabled = false;
+    });
+  }
+}
+function validateSecondStep() {
+  var gender = form.gender;
+  var month = form.month;
+  var year = form.year;
+  var location = form.location;
+  var elsewhere = form.elsewhere;
+  var fields = [gender, month, year, location];
+  var validation = fields.map(function (field) {
+    if (field.name === 'location') {
+      return validateLocation(field, elsewhere);
+    }
+    return validateRequired(field);
+  });
+  return !validation.includes(false);
+}
+function validateThirdStep() {
+  var education = form.education;
+  var householde_income = form.householde_income;
+  var fields = [education, householde_income];
+  var validation = fields.map(function (field) {
+    return validateRequired(field);
+  });
+  if (!validation.includes(false)) {
+    return validateAgeLocation();
+  }
+  return false;
+}
+function validateFourthStep() {
+  var HispanicLatino = form.HispanicLatino;
+  var race = form.race;
+  var fields = [HispanicLatino, race];
+  var validation = fields.map(function (field) {
+    if (field[0] && field[0].name === 'race') {
+      var hasChecked = [];
+      field.forEach(function (f) {
+        if (f.checked) hasChecked.push(f.checked);
+      });
+      return hasChecked.length > 0;
+    }
+    return !!field.value;
+  });
+  return !validation.includes(false);
+}
+function validateFifthStep() {
+  var firstName = form.first_name;
+  var lastName = form.last_name;
+  var zipcode = form.zipcode;
+  var confirmZipcode = form.confirmZipcode;
+  var email = form.email;
+  var confirmEmail = form.confirm_email;
+  var phone = form.phone;
+  var fields = [firstName, lastName, zipcode, confirmZipcode, email, confirmEmail];
+  var validation = fields.map(function (field) {
+    return validateRequired(field);
+  });
+  return !validation.includes(false);
+}
+function validateSixthStep() {
+  var acceptance = form.acceptance;
+  var othersSurveys = form.others_surveys;
+  var otherLanguage = form.other_language;
+  var fields = [acceptance, othersSurveys];
+  var validation = fields.map(function (field) {
+    if (field[0] && field[0].name === 'others_surveys') {
+      var hasChecked = [];
+      field.forEach(function (f) {
+        if (f.checked) hasChecked.push(f.checked);
+      });
+      return hasChecked.length > 0;
+    }
+    return !!field.value;
+  });
+  return !validation.includes(false);
+}
+function validateSteps(currIndex) {
+  if (currIndex === 1) {
+    return validateSecondStep();
+  }
+  if (currIndex === 2) {
+    return validateThirdStep();
+  }
+  if (currIndex === 3) {
+    return validateFourthStep();
+  }
+  if (currIndex === 4) {
+    return validateFifthStep();
+  }
+  return true;
+}
+function showTab(index) {
+  if (index !== 0) {
+    prevButton.style.display = 'block';
+    prevButton.textContent = 'Previous';
+  }
+  if (index === 0) {
+    lineFilled.style.width = '10%';
+    prevButton.style.display = 'none';
+    nextButton.textContent = 'Next';
+  }
+  if (index === 1) {
+    lineFilled.style.width = '30%';
+  }
+  if (index === 2) {
+    lineFilled.style.width = '50%';
+  }
+  if (index === 3) {
+    lineFilled.style.width = '70%';
+  }
+  if (index === 4) {
+    lineFilled.style.width = '90%';
+    // var HispanicLatino = form.HispanicLatino
+    var HispanicLatino = {
+      value: true
+    };
+    if (HispanicLatino.value) {
+      langPreferenceBlock.style.display = 'block';
+    }
+  }
+  if (index === 5) {
+    stepLine.style.display = 'none';
+    boxTitle.style.display = 'none';
+    navigation.style.display = 'none';
+  }
+  if (index === tabs.length - 1) {
+    nextButton.textContent = 'Submit';
+  }
+  tabs.forEach(function (tab) {
+    return tab.classList.remove('active');
+  });
+  steps.forEach(function (step, stepIndex) {
+    if (stepIndex < index) step.classList.add('done');
+  });
+  tabs[index].classList.add('active');
+}
+function prevTab() {
+  currentTabIndex = (currentTabIndex - 1 + tabs.length) % tabs.length;
+  showTab(currentTabIndex);
+}
+function nextTab() {
+  var isValid = validateSteps(currentTabIndex);
+  if (isValid) {
+    currentTabIndex = (currentTabIndex + 1) % tabs.length;
+    showTab(currentTabIndex);
+  }
+}
+showTab(0);
+function enviarFormulario(event) {
+  var formulario = document.getElementById('form');
+  var dadosFormulario = new FormData(formulario);
+  var date_of_birth = dadosFormulario.get('date_of_birth');
+  var location = dadosFormulario.get('location');
+  fetch('/teste', {
+    method: 'POST',
+    body: dadosFormulario
+  }).then(function (response) {
+    if (!response.ok) {
+      throw new Error('Erro ao enviar o formulário');
+    }
+    return response.json();
+  }).then(function (data) {
+    console.log('Resposta do servidor:', data);
+  }).catch(function (error) {
+    console.error('Erro ao enviar o formulário:', error);
+  });
+}</script>
+</html>
